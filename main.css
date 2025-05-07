@@ -16,9 +16,11 @@ body{
     color: white;
 }
 .navibar{
+        position: fixed;
+        padding-top:0%;
         width: 35%;
         margin-top: 5%;
-        margin-left: 60%;
+        margin-left:75%;
         display: flex;
         justify-content: space-between;
         background-color: rgba(0, 0, 0, 0.89);
@@ -41,6 +43,7 @@ img{
     border-radius: 50%;
     height:20%;
     width:20%;
+    margin-left: 0%;
 }
 h2{
     color: whitesmoke;
