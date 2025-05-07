@@ -12,7 +12,7 @@
 
 
 body{
-    background: rgb(0, 0, 2);
+    background: rgb(3, 3, 32);
     color: white;
 }
 .navibar{
@@ -20,10 +20,10 @@ body{
         padding-top:0%;
         width: 35%;
         margin-top: 5%;
-        margin-left:75%;
+        margin-left:70%;
         display: flex;
         justify-content: space-between;
-        background-color: rgba(0, 0, 0, 0.89);
+        background-color: rgb(3, 3, 32);
 
 }
 li {
@@ -31,19 +31,33 @@ li {
     list-style-type: none;
     margin: 0 12px;
   }
-
-hr{
-    color: white;
-}
-tr{
-    width:100%;
-    padding: 10%;
-}
-img{
+  nav ul li a {
+    color: #09acf7;  
+    text-decoration: none;  
+    font-size: 18px;  
+  }
+  .home{
+    display: flex;
+  }
+ .quote{
+    height:50%;
+    width:50%;
+    margin-left:5%;
+    margin-top:10%;
+    padding-top:10%;
+ }
+ img{
     border-radius: 50%;
-    height:20%;
-    width:20%;
-    margin-left: 0%;
+    height:40%;
+    width:40%;
+    
+}
+.img{
+    height:50%;
+    width:50%;
+    margin-left:2%;
+    margin-top:1%;
+    padding-top:1%;
 }
 h2{
     color: whitesmoke;
@@ -101,6 +115,18 @@ h3{
     text-align: right;
     padding: 5px;
     border-radius: 15px;
+    
+  }
+  .certificate{
+    color: #c5d8e0; 
+    text-decoration: none;  
+    font-size: 18px; 
+    margin-left:0%;
+    margin-right:0%; 
+  }
+  .certificate-li{
+    margin: 0px;
+    padding: 0px;
     
   }
   footer{
