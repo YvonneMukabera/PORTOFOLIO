@@ -69,7 +69,10 @@ h3{
 .about-div{
     margin: 5%;
 }
+.skills{
+  margin:50px;
  
+ } 
  
 .skills-div{
     margin:10%;
@@ -84,10 +87,7 @@ h3{
     margin: 10px;  
 }
 
-.skills{
- margin:50px;
-
-}
+/*
 .skills-rate{
     margin-left: 20%;
 }
@@ -116,7 +116,7 @@ h3{
     padding: 5px;
     border-radius: 15px;
     
-  }
+  } */
   .certificate{
     color: #c5d8e0; 
     text-decoration: none;  
