@@ -1,0 +1,14 @@
+services:
+  - type: web
+    name: yvonne-portfolio
+    env: java
+    plan: free
+    buildCommand: mvn -pl PORTOFOLIO clean package -DskipTests
+    startCommand: java -jar PORTOFOLIO/target/portfolio-0.0.1-SNAPSHOT.jar
+    envVars:
+      - key: PORTFOLIO_MAIL_ENABLED
+        value: true
+      - key: PORTFOLIO_MAIL_USERNAME
+        value: mukabera255@gmail.com
+      - key: PORTFOLIO_MAIL_PASSWORD
+        sync: false

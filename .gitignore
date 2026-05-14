@@ -1,0 +1,8 @@
+.idea/
+target/
+PORTOFOLIO/target/
+*.log
+*.class
+*.jar
+*.war
+*.ear
