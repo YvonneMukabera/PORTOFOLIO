@@ -1,0 +1,14 @@
+services:
+  - type: web
+    name: yvonne-portfolio
+    runtime: docker
+    plan: free
+    dockerfilePath: ../Dockerfile
+    dockerContext: ..
+    envVars:
+      - key: PORTFOLIO_MAIL_ENABLED
+        value: true
+      - key: PORTFOLIO_MAIL_USERNAME
+        value: mukabera255@gmail.com
+      - key: PORTFOLIO_MAIL_PASSWORD
+        sync: false

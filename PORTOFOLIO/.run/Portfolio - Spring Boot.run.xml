@@ -1,0 +1,9 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="Portfolio - Spring Boot" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+    <module name="portfolio" />
+    <option name="SPRING_BOOT_MAIN_CLASS" value="com.yvonne.portfolio.PortfolioApplication" />
+    <method v="2">
+      <option name="Make" enabled="true" />
+    </method>
+  </configuration>
+</component>

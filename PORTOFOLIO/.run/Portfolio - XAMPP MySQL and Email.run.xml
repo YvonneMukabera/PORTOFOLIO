@@ -1,0 +1,15 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="Portfolio - XAMPP MySQL and Email" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+    <option name="ACTIVE_PROFILES" value="xampp" />
+    <module name="portfolio" />
+    <option name="SPRING_BOOT_MAIN_CLASS" value="com.yvonne.portfolio.PortfolioApplication" />
+    <envs>
+      <env name="PORTFOLIO_MAIL_ENABLED" value="true" />
+      <env name="PORTFOLIO_MAIL_USERNAME" value="mukabera255@gmail.com" />
+      <env name="PORTFOLIO_MAIL_PASSWORD" value="replace-with-gmail-app-password" />
+    </envs>
+    <method v="2">
+      <option name="Make" enabled="true" />
+    </method>
+  </configuration>
+</component>

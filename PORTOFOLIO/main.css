@@ -1,0 +1,142 @@
+/* Removes unwanted styling from the page */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  border: none;
+  max-width: 100%;
+}
+
+
+body{
+    background: rgb(3, 3, 32);
+    color: white;
+}
+.navibar{
+        position: fixed;
+        padding-top:0%;
+        width: 35%;
+        margin-top: 5%;
+        margin-left:70%;
+        display: flex;
+        justify-content: space-between;
+        background-color: rgb(3, 3, 32);
+
+}
+li {
+    display: inline-block;
+    list-style-type: none;
+    margin: 0 12px;
+  }
+  nav ul li a {
+    color: #09acf7;  
+    text-decoration: none;  
+    font-size: 18px;  
+  }
+  .home{
+    display: flex;
+  }
+ .quote{
+    height:50%;
+    width:50%;
+    margin-left:5%;
+    margin-top:10%;
+    padding-top:10%;
+ }
+ img{
+    border-radius: 50%;
+    height:40%;
+    width:40%;
+    
+}
+.img{
+    height:50%;
+    width:50%;
+    margin-left:2%;
+    margin-top:1%;
+    padding-top:1%;
+}
+h2{
+    color: whitesmoke;
+    text-align: center;
+}
+h3{
+    margin: 0px;
+}
+.about-div{
+    margin: 5%;
+}
+.skills{
+  margin:50px;
+ 
+ } 
+ 
+.skills-div{
+    margin:10%;
+}
+.skills-div1{
+    margin:0;
+}
+.skills-div2{
+    margin: 20px;  
+}
+.skills-div3{
+    margin: 10px;  
+}
+
+/*
+.skills-rate{
+    margin-left: 20%;
+}
+.skill {
+    margin-bottom: 10px;
+  }
+  
+  .skill-name {
+    color: white;
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: flex;
+  }
+  
+  .skill-bar {
+    background-color: #636cb1;
+    border-radius: 20px;
+    overflow: hidden;
+    width: 30%;
+  }
+  
+  .skill-level {
+    background-color: #a4be7b;
+    color: black;
+    text-align: right;
+    padding: 5px;
+    border-radius: 15px;
+    
+  } */
+  .certificate{
+    color: #c5d8e0; 
+    text-decoration: none;  
+    font-size: 18px; 
+    margin-left:0%;
+    margin-right:0%; 
+  }
+  .certificate-li{
+    margin: 0px;
+    padding: 0px;
+    
+  }
+  footer{
+  text-decoration: none;
+  background: #0d0d0d;
+  text-align: center;
+  color: white;
+  width: 100%;
+  padding: 2%;
+  height: 15%;
+  margin-top: 5%;
+  }
+ 

@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" th:content="${profile.fullName} + ' professional software development portfolio'">
+    <title th:text="${profile.fullName} + ' | Portfolio'">Yvonne Mukabera | Portfolio</title>
+    <link rel="icon" type="image/jpeg" href="/assets/images/icon.jpg">
+    <link rel="stylesheet" href="/css/main.css">
+</head>
+<body>
+<header class="site-header">
+    <a class="brand" href="#home" th:text="${profile.fullName}">Yvonne Mukabera</a>
+    <button class="nav-toggle" type="button" aria-label="Open navigation" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+    <nav class="nav-links" aria-label="Primary navigation">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#experience">Experience</a>
+        <a href="#certificates">Certificates</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<main>
+    <section id="home" class="hero section-grid">
+        <div class="hero-copy reveal">
+            <p class="eyebrow">Portfolio</p>
+            <h1>
+                <span th:text="${profile.fullName}">Yvonne Mukabera</span>
+                <small th:text="${profile.title}">Aspiring Software Developer</small>
+            </h1>
+            <p class="hero-summary" th:text="${profile.summary}">Portfolio summary</p>
+            <div class="hero-actions">
+                <a class="button primary" href="#contact">Send a message</a>
+                <a class="button secondary" href="/assets/docs/Yvonne-Mukabera-CV.pdf" target="_blank" rel="noopener">View CV</a>
+            </div>
+            <div class="hero-meta" aria-label="Contact details">
+                <a th:href="'mailto:' + ${profile.email}" th:text="${profile.email}">email</a>
+                <a th:href="'tel:' + ${profile.phone}" th:text="${profile.phone}">phone</a>
+                <span th:text="${profile.location}">location</span>
+            </div>
+        </div>
+        <div class="portrait-panel reveal">
+            <div class="portrait-glow" aria-hidden="true"></div>
+            <img class="portrait-image" src="/assets/images/passport.jpeg" th:alt="${profile.fullName} + ' portrait'">
+        </div>
+    </section>
+
+    <section id="about" class="section-band">
+        <div class="section-heading reveal">
+            <p class="eyebrow">About</p>
+            <h2>Building useful systems with curiosity and discipline.</h2>
+        </div>
+        <div class="about-layout">
+            <article class="about-copy reveal">
+                <p>
+                    I am a Computer Engineering student at the University of Rwanda, Nyarugenge Campus,
+                    specializing in Software Engineering. I combine UI/UX design, frontend development,
+                    backend development, databases, and practical digital-skills support.
+                </p>
+                <p>
+                    I am building myself into a competitive full-stack developer by working with real tools,
+                    learning from projects, and creating systems that are clear, useful, and reliable.
+                </p>
+            </article>
+            <div class="highlight-list reveal">
+                <div th:each="highlight : ${profile.highlights}" class="highlight-item">
+                    <span></span>
+                    <p th:text="${highlight}">Highlight</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="section-band compact">
+        <div class="section-heading reveal">
+            <p class="eyebrow">Skills</p>
+            <h2>Design thinking, frontend craft, backend logic, and database discipline.</h2>
+        </div>
+        <div class="skill-category-grid reveal">
+            <article class="skill-category-card" th:each="category : ${profile.skillCategories}">
+                <h3 th:text="${category.name}">Category</h3>
+                <p th:text="${category.summary}">Summary</p>
+                <div class="skill-tags">
+                    <span th:each="tool : ${category.tools}" th:text="${tool}">Tool</span>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <section id="experience" class="section-band">
+        <div class="section-heading reveal">
+            <p class="eyebrow">Experience</p>
+            <h2>Practical work across learning support, digital skills, and office systems.</h2>
+        </div>
+        <div class="timeline">
+            <article class="timeline-item reveal" th:each="job : ${profile.experience}">
+                <div>
+                    <p class="period" th:text="${job.period}">Period</p>
+                    <h3 th:text="${job.role}">Role</h3>
+                    <p class="organization" th:text="${job.organization}">Organization</p>
+                </div>
+                <ul>
+                    <li th:each="task : ${job.responsibilities}" th:text="${task}">Responsibility</li>
+                </ul>
+            </article>
+        </div>
+    </section>
+
+    <section class="section-band project-section">
+        <div class="section-heading reveal">
+            <p class="eyebrow">Featured Work</p>
+            <h2>Selected projects and achievements.</h2>
+        </div>
+        <div class="project-grid">
+            <article class="project-card reveal">
+                <div class="project-label">Hackathon Project</div>
+                <h3>Citizen Engagement System Prototype</h3>
+                <p>
+                    I designed a UI/UX prototype for a citizen engagement system focused on making public
+                    communication clearer and easier to use. The project won second place at the DTP Hackathon 2025.
+                </p>
+                <div class="project-stack">
+                    <span>Figma</span>
+                    <span>User flows</span>
+                    <span>Prototype</span>
+                    <span>Problem solving</span>
+                </div>
+            </article>
+            <article class="project-card reveal">
+                <div class="project-label">Web Portfolio</div>
+                <h3>Personal Portfolio Website</h3>
+                <p>
+                    I built a responsive personal portfolio to present my education, skills, certificates, and
+                    project work in a clear and professional format.
+                </p>
+                <div class="project-stack">
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>JavaScript</span>
+                    <span>Responsive design</span>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <section class="section-band compact">
+        <div class="section-heading reveal">
+            <p class="eyebrow">Education</p>
+            <h2>Current academic path.</h2>
+        </div>
+        <div class="education-list">
+            <article class="education-card reveal" th:each="item : ${profile.education}">
+                <p class="period" th:text="${item.period}">Period</p>
+                <h3 th:text="${item.qualification}">Qualification</h3>
+                <p th:text="${item.institution}">Institution</p>
+                <strong th:text="${item.focus}">Focus</strong>
+            </article>
+        </div>
+    </section>
+
+    <section id="certificates" class="section-band">
+        <div class="section-heading reveal">
+            <p class="eyebrow">Certificates & Achievements</p>
+            <h2>Documents that support the story.</h2>
+        </div>
+        <div class="certificate-grid">
+            <a class="certificate-card reveal" th:each="certificate : ${profile.certificates}"
+               th:href="${certificate.href}" target="_blank" rel="noopener">
+                <span th:text="${certificate.issuer}">Issuer</span>
+                <strong th:text="${certificate.title}">Certificate</strong>
+            </a>
+        </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+        <div class="section-heading reveal">
+            <p class="eyebrow">Contact</p>
+            <h2>Let's connect about projects, learning, and opportunities.</h2>
+        </div>
+        <div class="contact-layout">
+            <div class="contact-links reveal">
+                <a href="mailto:mukabera255@gmail.com">mukabera255@gmail.com</a>
+                <a href="tel:+250793835394">+250 793 835 394</a>
+                <a href="https://github.com/YvonneMukabera" target="_blank" rel="noopener">GitHub</a>
+                <a href="https://www.linkedin.com/in/yvonne-mukabera-5913bb302" target="_blank" rel="noopener">LinkedIn</a>
+                <a href="https://wa.me/250793835394" target="_blank" rel="noopener">WhatsApp</a>
+            </div>
+            <form class="contact-form reveal" id="contactForm" novalidate>
+                <div class="form-row">
+                    <label for="firstName">First name</label>
+                    <input id="firstName" name="firstName" type="text" autocomplete="given-name" required>
+                </div>
+                <div class="form-row">
+                    <label for="lastName">Last name</label>
+                    <input id="lastName" name="lastName" type="text" autocomplete="family-name" required>
+                </div>
+                <div class="form-row full">
+                    <label for="email">Email</label>
+                    <input id="email" name="email" type="email" inputmode="email" autocomplete="email" required>
+                </div>
+                <div class="form-row full">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button class="button primary full" type="submit">Send message</button>
+                <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+            </form>
+        </div>
+    </section>
+</main>
+
+<footer class="site-footer">
+    <p>&copy; <span id="year"></span> Yvonne Mukabera. All rights reserved.</p>
+    <a href="#home">Back to top</a>
+</footer>
+
+<script src="/js/script.js"></script>
+</body>
+</html>
