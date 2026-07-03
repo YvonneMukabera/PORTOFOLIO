@@ -34,7 +34,7 @@ public class PortfolioService {
                     new SkillCategory(
                             "Frontend",
                             "I build responsive web interfaces with clear structure, polished styling, interactive behavior, and attention to accessibility.",
-                            List.of("HTML", "CSS", "JavaScript", "Responsive design", "DOM interaction")
+                            List.of("HTML", "CSS", "JavaScript"," React","Responsive design", "DOM interaction")
                     ),
                     new SkillCategory(
                             "Backend",
@@ -44,7 +44,7 @@ public class PortfolioService {
                     new SkillCategory(
                             "Database",
                             "I can structure application data, connect backend services to databases, and manage records with clear data models.",
-                            List.of("MySQL", "SQL basics", "Database tables", "Data modeling", "CRUD foundations")
+                            List.of("MySQL", "PostgreSQL", "Database tables", "Data modeling", "CRUD foundations")
                     ),
                     new SkillCategory(
                             "Tools & Collaboration",
