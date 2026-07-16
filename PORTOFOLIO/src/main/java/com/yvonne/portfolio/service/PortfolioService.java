@@ -93,7 +93,7 @@ public class PortfolioService {
                     new Certificate("JavaScript Certificate", "Online Certification", "/assets/docs/JAVASCRIPT CERTIFICATE.pdf"),
                     new Certificate("High School Diploma", "Academic Record", "/assets/docs/mukaberayvonne diploma.pdf"),
                     new Certificate("Best Performance Award", "Achievement", "/assets/docs/Best performance award.pdf"),
-                    new Certificate("Full CV", "Yvonne Mukabera", "/assets/docs/Yvonne-Mukabera-CV.pdf")
+                    new Certificate("Full CV", "Yvonne Mukabera", "/assets/docs/Yvonne Mukabera CV.pdf")
             )
     );
 
