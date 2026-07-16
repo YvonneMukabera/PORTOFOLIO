@@ -39,7 +39,7 @@ public class PortfolioService {
                     new SkillCategory(
                             "Backend",
                             "I work with backend frameworks that power applications, validate user input, serve APIs, and organize application data.",
-                            List.of("Spring Boot", "Django", "Java", "Python", "REST APIs")
+                            List.of("Spring Boot", "Django", "Express.JS","Node.js","Java", "Python","JavaScript", "REST APIs")
                     ),
                     new SkillCategory(
                             "Database",
